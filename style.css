@@ -1,0 +1,70 @@
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-y: hidden;
+    background-color: #dc143c;
+}
+
+
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 1em 3em;
+    color: #dc143c;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em #ffffff;
+    background-color: #dc143c;
+    border: 0.25em solid #dc143c;
+    border-radius: 10em;
+    box-shadow: 0 0 1em #dc143c, 
+    0 0 4em 1em #dc143c,
+    inset 0 0 0.75em 0.25em #dc143c;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #dc143c;
+    filter: blur(2em);
+    opacity: 0.7;
+    pointer-events: none;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+a:hover {
+    color: #dc143c;
+}
+
+button:hover {
+    
+    color: #dc143c;
+    background-color: #dc143c;
+    box-shadow: 0 0 1em 0.25em #dc143c,
+    0 0 4em 2em #dc143c,
+    inset 0 0 0.75em 0.25em #dc143c;
+}
+
+button:active {
+    box-sizing: 0 0 0.6em 0.25em #dc143c,
+    0 0 2.5em 2em #dc143c,
+    inset 0 0 0.5em 0.25em #dc143c;
+} 
+
+    
